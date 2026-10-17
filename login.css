@@ -200,24 +200,7 @@ a {
     outline-offset: 2px;
 }
 
-/* ---------- More projects + footer ---------- */
-.more {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.more h2 {
-    font-size: 24px;
-    color: #1b2a6b;
-    margin-bottom: 10px;
-}
-
-.more-links a {
-    display: inline-block;
-    margin: 6px 10px;
-    font-weight: bold;
-}
-
+/* ---------- Footer ---------- */
 .footer {
     text-align: center;
     font-size: 14px;
