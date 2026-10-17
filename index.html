@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Demo | HTML, CSS and JavaScript Project</title>
+    <meta name="description" content="A responsive login page with live form validation and a show/hide password button, built with HTML, CSS and JavaScript by Shankar Saini. Demo only.">
+    <meta name="author" content="Shankar Saini">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#1b2a6b">
+    <link rel="canonical" href="https://shankar-saini.github.io/login-page/">
+    <link rel="alternate" hreflang="en-in" href="https://shankar-saini.github.io/login-page/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shankar Saini | Projects">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:url" content="https://shankar-saini.github.io/login-page/">
+    <meta property="og:title" content="Login Page Demo | HTML, CSS and JavaScript Project">
+    <meta property="og:description" content="A responsive login page with live form validation and a show/hide password button. A practice project by Shankar Saini.">
+    <meta property="og:image" content="https://shankar-saini.github.io/shankar-saini-seo-web-developer.png">
+    <meta property="og:image:alt" content="Shankar Saini, SEO specialist and web developer from Jaipur">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Login Page Demo | HTML, CSS and JavaScript Project">
+    <meta name="twitter:description" content="A responsive login page with live form validation and a show/hide password button. A practice project by Shankar Saini.">
+    <meta name="twitter:image" content="https://shankar-saini.github.io/shankar-saini-seo-web-developer.png">
+
+    <link rel="stylesheet" href="login.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {"@type": "WebPage", "@id": "https://shankar-saini.github.io/login-page/#page", "url": "https://shankar-saini.github.io/login-page/",
+          "name": "Login Page Demo | HTML, CSS and JavaScript Project",
+          "description": "A responsive login page with live form validation and a show/hide password button. Demo only.",
+          "inLanguage": "en-IN",
+          "isPartOf": {"@id": "https://shankar-saini.github.io/#website"},
+          "author": {"@id": "https://shankar-saini.github.io/#person"}},
+        {"@type": "BreadcrumbList", "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://shankar-saini.github.io/"},
+          {"@type": "ListItem", "position": 2, "name": "Projects", "item": "https://shankar-saini.github.io/projects"},
+          {"@type": "ListItem", "position": 3, "name": "Login Page", "item": "https://shankar-saini.github.io/login-page/"}]},
+        {"@type": "Person", "@id": "https://shankar-saini.github.io/#person", "name": "Shankar Saini", "url": "https://shankar-saini.github.io/"}
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <main class="page">
+
+        <section class="login-box" aria-labelledby="login-title">
+
+            <!-- Left side: welcome panel -->
+            <div class="side">
+                <p class="logo">Sample<span>App</span></p>
+                <h1 id="login-title">Welcome back!</h1>
+                <p>Log in to see your dashboard. This is a demo page, so any email and an 8+ character password will work.</p>
+                <ul class="points">
+                    <li>Live form validation</li>
+                    <li>Show / hide password</li>
+                    <li>Works on phone and desktop</li>
+                </ul>
+            </div>
+
+            <!-- Right side: form -->
+            <div class="form-side">
+                <h2>Log in</h2>
+
+                <form id="login-form" novalidate>
+                    <div class="field">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="email-error">
+                        <p class="error" id="email-error" role="alert"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <div class="pw-wrap">
+                            <input type="password" id="password" name="password" placeholder="At least 8 characters" autocomplete="current-password" required aria-describedby="password-error">
+                            <button type="button" id="toggle-pw" class="toggle" aria-label="Show password" aria-pressed="false">Show</button>
+                        </div>
+                        <p class="error" id="password-error" role="alert"></p>
+                    </div>
+
+                    <div class="row">
+                        <label class="check"><input type="checkbox" id="remember" name="remember"> Remember me</label>
+                        <a href="#" id="forgot">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">Log in</button>
+
+                    <p class="result" id="result" role="status" aria-live="polite"></p>
+                </form>
+
+                <p class="demo-note">Demo only: nothing you type here is sent or stored anywhere.</p>
+            </div>
+        </section>
+
+        <!-- More projects -->
+        <section class="more" aria-labelledby="more-title">
+            <h2 id="more-title">More Projects by Shankar Saini</h2>
+            <p>
+                This is a mini practice website made by
+                <a href="https://shankar-saini.github.io/" rel="author">Shankar Saini</a>.
+                Have a look at my other HTML, CSS and JavaScript projects too:
+            </p>
+            <p class="more-links">
+                <a href="https://shankar-saini.github.io/travel-time/">Travel Time website</a>
+                <a href="https://shankar-saini.github.io/restaurant-website/">Restaurant website</a>
+                <a href="https://shankar-saini.github.io/projects">See all my projects</a>
+                <a href="https://github.com/shankar-saini/login-page" rel="noopener">View the code on GitHub</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Shankar Saini · Practice project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
