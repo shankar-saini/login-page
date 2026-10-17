@@ -1,0 +1,249 @@
+/* ---------- Basic setup ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #25304a;
+    background: linear-gradient(135deg, #eef1ff, #f6efff);
+    min-height: 100vh;
+}
+
+a {
+    color: #3b4bd8;
+}
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 16px 20px;
+}
+
+/* ---------- Login box ---------- */
+.login-box {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(40, 50, 120, 0.18);
+}
+
+.side {
+    flex: 1 1 45%;
+    background: linear-gradient(160deg, #1b2a6b, #5a3fd0);
+    color: #ffffff;
+    padding: 44px 36px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.logo span {
+    color: #ffd166;
+}
+
+.side h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.side p {
+    opacity: 0.9;
+    margin-bottom: 22px;
+}
+
+.points {
+    list-style: none;
+}
+
+.points li {
+    margin-bottom: 8px;
+}
+
+.points li::before {
+    content: "✓ ";
+    color: #ffd166;
+    font-weight: bold;
+}
+
+.form-side {
+    flex: 1 1 55%;
+    padding: 44px 40px;
+}
+
+.form-side h2 {
+    font-size: 26px;
+    margin-bottom: 22px;
+    color: #1b2a6b;
+}
+
+/* ---------- Form ---------- */
+.field {
+    margin-bottom: 18px;
+}
+
+.field label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.field input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #c9cfe6;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: #5a3fd0;
+    box-shadow: 0 0 0 3px rgba(90, 63, 208, 0.18);
+}
+
+.field.invalid input {
+    border-color: #d93a3a;
+}
+
+.field.valid input {
+    border-color: #2e9f5b;
+}
+
+.error {
+    color: #d93a3a;
+    font-size: 13px;
+    min-height: 18px;
+    margin-top: 4px;
+}
+
+.pw-wrap {
+    position: relative;
+}
+
+.pw-wrap input {
+    padding-right: 70px;
+}
+
+.toggle {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #3b4bd8;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.check {
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #3b4bd8, #5a3fd0);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 13px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    opacity: 0.92;
+}
+
+.result {
+    margin-top: 14px;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+.result.ok {
+    color: #2e9f5b;
+}
+
+.demo-note {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #6b7390;
+}
+
+:focus-visible {
+    outline: 3px solid #ffb703;
+    outline-offset: 2px;
+}
+
+/* ---------- More projects + footer ---------- */
+.more {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.more h2 {
+    font-size: 24px;
+    color: #1b2a6b;
+    margin-bottom: 10px;
+}
+
+.more-links a {
+    display: inline-block;
+    margin: 6px 10px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: #6b7390;
+    padding: 20px 16px 30px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 760px) {
+    .login-box {
+        flex-direction: column;
+    }
+
+    .side {
+        padding: 30px 24px;
+    }
+
+    .logo {
+        margin-bottom: 22px;
+    }
+
+    .side h1 {
+        font-size: 26px;
+    }
+
+    .form-side {
+        padding: 30px 24px;
+    }
+}
